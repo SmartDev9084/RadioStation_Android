@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ID_FRMLYT_LOGIN"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="androidcustom.radiostation.ui.ActivityLogin"
+	tools:ignore="MergeRootFrame" >
+
+	<RelativeLayout
+		android:id="@+id/ID_RELLYT_LOGIN"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<RelativeLayout
+			android:id="@+id/ID_RELLYT_LOGIN_IMGVIEW"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="16dp" >
+
+			<ImageView
+				android:id="@+id/ID_IMGVIEW_BTN_LOGIN_TEMPCENTER"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:contentDescription="@string/str_description"
+				android:src="@drawable/img_temp_vert_white" />
+
+			<Button
+				android:id="@+id/ID_BTN_LOGIN_GOOGLE"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="26dp"
+				android:layout_toRightOf="@+id/ID_IMGVIEW_BTN_LOGIN_TEMPCENTER"
+				android:background="@drawable/selector_login_google"
+				android:contentDescription="@string/str_description"
+				android:minWidth="48dip" />
+
+			<Button
+				android:id="@+id/ID_BTN_LOGIN_TWITTER"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginRight="26dp"
+				android:layout_toLeftOf="@+id/ID_IMGVIEW_BTN_LOGIN_TEMPCENTER"
+				android:background="@drawable/selector_login_twitter"
+				android:contentDescription="@string/str_description"
+				android:minWidth="48dip" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/ID_RELLYT_LOGIN_TXTVIEW"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/ID_RELLYT_LOGIN_IMGVIEW"
+			android:layout_alignParentLeft="false"
+			android:layout_centerHorizontal="true"
+			android:layout_centerInParent="false"
+			android:layout_marginBottom="22dp" >
+
+			<TextView
+				android:id="@+id/ID_TXTVIEW_LOGIN_GUEST"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:text="Guest" />
+
+			<ImageView
+				android:id="@+id/ID_IMGVIEW_TEMPCENTER_BLACK_1"
+				android:layout_width="wrap_content"
+				android:layout_height="20dp"
+				android:layout_marginLeft="15dp"
+				android:layout_toRightOf="@id/ID_TXTVIEW_LOGIN_GUEST"
+				android:contentDescription="@string/str_description"
+				android:src="@drawable/img_temp_vert_black" />
+
+			<TextView
+				android:id="@+id/ID_TXTVIEW_LOGIN_REGISTER"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:layout_toRightOf="@id/ID_IMGVIEW_TEMPCENTER_BLACK_1"
+				android:text="Register" />
+
+			<ImageView
+				android:id="@+id/ID_IMGVIEW_TEMPCENTER_BLACK_2"
+				android:layout_width="wrap_content"
+				android:layout_height="20dp"
+				android:layout_marginLeft="15dp"
+				android:layout_toRightOf="@id/ID_TXTVIEW_LOGIN_REGISTER"
+				android:contentDescription="@string/str_description"
+				android:src="@drawable/img_temp_vert_black" />
+
+			<TextView
+				android:id="@+id/ID_TXTVIEW_LOGIN_LOSTPSWD"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="15dp"
+				android:layout_toRightOf="@id/ID_IMGVIEW_TEMPCENTER_BLACK_2"
+				android:text="Lost Password" />
+
+		</RelativeLayout>
+
+		<ImageView
+		    android:id="@+id/ID_IMGVIEW_LOGIN_BACKGROUND"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/ID_RELLYT_LOGIN_TXTVIEW"
+		    android:layout_alignParentBottom="false"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginBottom="26dp"
+		    android:contentDescription="@string/str_description"
+		    android:scaleType="fitXY"
+		    android:src="@drawable/img_bkg_login" />
+
+		<Button
+			android:id="@+id/ID_BTN_LOGIN_FACEBOOK"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="80dp"
+			android:contentDescription="@string/str_description"
+			android:background="@drawable/selector_login_facebook"
+			android:visibility="visible" />
+		
+	</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ID_FRMLYT_SPLASH"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="androidcustom.radiostation.ui.ActivitySplash"
+	tools:ignore="MergeRootFrame" >
+
+	<ImageView
+	    android:id="@+id/ID_IMGVIEW_SPLASH_BACKGROUND"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:contentDescription="@string/str_description"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/img_bkg_splash" />
+
+</FrameLayout>
+

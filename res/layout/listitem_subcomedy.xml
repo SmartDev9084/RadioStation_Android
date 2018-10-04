@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="120dp" >
+
+	<ImageView
+		android:id="@+id/ID_IMGVIEW_ITEM_BACK"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scaleType="fitXY"
+		android:src="@drawable/img_itm_back"
+		android:contentDescription="@string/str_description" />
+
+	<Button
+		android:id="@+id/ID_BTN_ADD_FAVORITE"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="45dp"
+		android:background="@drawable/selector_add_favorite"
+		android:contentDescription="@string/str_description"
+		android:visibility="invisible" />
+
+	<Button
+		android:id="@+id/ID_BTN_ADD_PLAYLIST"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginLeft="50dp"
+		android:layout_marginTop="45dp"
+		android:background="@drawable/selector_add_playlist"
+		android:contentDescription="@string/str_description"
+		android:visibility="invisible" />
+
+	<Button
+		android:id="@+id/ID_BTN_SHARE"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginLeft="90dp"
+		android:layout_marginTop="45dp"
+		android:background="@drawable/selector_share"
+		android:contentDescription="@string/str_description"
+		android:visibility="invisible" />
+
+	<RelativeLayout
+		android:id="@+id/ID_RELLYT_ITEM_MAIN_CONTENT"
+		android:layout_width="fill_parent"
+		android:layout_height="120dp"
+		android:padding="0dp" >
+
+		<ImageView
+			android:id="@+id/ID_IMGVIEW_ITEM_SUBCOMEDY_BACK"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:contentDescription="@string/str_description" />
+
+		<ImageView
+			android:id="@+id/ID_IMGVIEW_ITEM_SUBCOMEDY"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:contentDescription="@string/str_description" />
+
+		<Button
+			android:id="@+id/ID_BTN_SLIDE"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="35dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/selector_btn_slide"
+			android:contentDescription="@string/str_description" />
+
+		<TextView
+			android:id="@+id/ID_TXTVIEW_ITEM_SUBCOMEDY"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@id/ID_IMGVIEW_ITEM_SUBCOMEDY_BACK"
+			android:layout_toLeftOf="@id/ID_BTN_SLIDE"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:lines="1"
+			android:maxLines="1"
+			android:textSize="8pt"
+			android:typeface="monospace" />
+
+		<TextView
+			android:id="@+id/ID_TXTVIEW_ITEM_SUBCOMEDY_DURATION"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:layout_alignParentBottom="true"
+			android:layout_toLeftOf="@id/ID_BTN_SLIDE"
+			android:layout_below="@+id/ID_TXTVIEW_ITEM_SUBCOMEDY"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="10dp"
+			android:textSize="9pt"
+			android:typeface="monospace" />
+
+		<TextView
+			android:id="@+id/ID_TXTVIEW_ITEM_SUBCOMEDY_SUBTEXT"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_toRightOf="@id/ID_IMGVIEW_ITEM_SUBCOMEDY_BACK"
+			android:layout_toLeftOf="@id/ID_TXTVIEW_ITEM_SUBCOMEDY_DURATION"
+			android:layout_below="@id/ID_TXTVIEW_ITEM_SUBCOMEDY"
+			android:lines="1"
+			android:maxLines="1"
+			android:textSize="7pt"
+			android:typeface="monospace" />
+
+	</RelativeLayout>
+
+</FrameLayout>

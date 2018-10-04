@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+
+		<LinearLayout
+			android:id="@+id/ID_LINLYT_USER_TABHEADER"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_alignParentTop="true" >
+
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="50dp" >
+
+				<ImageView
+					android:id="@+id/ID_IMGVIEW_USER_FAVORITE"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:scaleType="fitXY" />
+
+				<TextView
+				    android:id="@+id/ID_TXTVIEW_USER_FAVORITE"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_marginLeft="25dp"
+				    android:textSize="11pt"
+				    android:text="Favorite"
+				    android:gravity="center"
+				    android:textColor="@color/COLOR_WHITE" />
+
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="50dp" >
+
+				<ImageView
+					android:id="@+id/ID_IMGVIEW_USER_PLAYLIST"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:scaleType="fitXY" />
+
+				<TextView
+				    android:id="@+id/ID_TXTVIEW_USER_PLAYLIST"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_marginLeft="25dp"
+				    android:textSize="11pt"
+				    android:text="Playlist"
+				    android:gravity="center"
+				    android:textColor="@color/COLOR_WHITE" />
+
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="50dp" >
+
+				<ImageView
+					android:id="@+id/ID_IMGVIEW_USER_HISTORY"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:scaleType="fitXY" />
+
+				<TextView
+				    android:id="@+id/ID_TXTVIEW_USER_HISTORY"
+				    android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:layout_marginLeft="25dp"
+				    android:textSize="11pt"
+				    android:gravity="center"
+				    android:text="History"
+				    android:textColor="@color/COLOR_WHITE" />
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<ListView
+			android:id="@+id/ID_LISTVIEW_USER_FAVORITE"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/ID_LINLYT_USER_TABHEADER" >
+
+		</ListView>
+
+		<ListView
+			android:id="@+id/ID_LISTVIEW_USER_PLAYLIST"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/ID_LINLYT_USER_TABHEADER" >
+
+		</ListView>
+		
+		<ListView
+			android:id="@+id/ID_LISTVIEW_USER_HISTORY"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/ID_LINLYT_USER_TABHEADER" >
+
+		</ListView>
+		
+	</RelativeLayout>
+
+</FrameLayout>

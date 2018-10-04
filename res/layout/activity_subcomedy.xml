@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:padding="0dp" >
+	
+		<ImageView
+			android:id="@+id/ID_IMGVIEW_TITLEBAR_BACK"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_titlebar_back" />
+
+		<Button
+			android:id="@+id/ID_BTN_TITLEBAR_PLAY_LEFT"
+			android:layout_width="40dp"
+			android:layout_height="fill_parent"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="20dp"
+			android:background="@drawable/selector_btn_list"
+			android:contentDescription="@string/str_description" />
+	
+		<TextView
+			android:id="@+id/ID_TXTVIEW_TITLEBAR_PLAY_TITLE"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="60dp"
+			android:layout_marginRight="60dp"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="12pt" />
+	
+	</RelativeLayout>
+
+	<FrameLayout
+		android:id="@+id/ID_FRMLYT_SUBCOMEDY"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="40dp" >
+
+	</FrameLayout>
+
+</FrameLayout>
